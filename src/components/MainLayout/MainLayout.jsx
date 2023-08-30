@@ -8,7 +8,7 @@ import React, { useState } from 'react';
 
 import { SidebarData } from '../../data/SidebarData';
 
-const { Header, Sider} = Layout;
+const { Header, Sider, Content} = Layout;
 const MainLayout = () => {
   const [collapsed, setCollapsed] = useState(false);
   const {
@@ -53,7 +53,16 @@ const MainLayout = () => {
             }}
           />
         </Header>
-        <Outlet />
+        <Content
+          style={{
+            margin: '24px 16px',
+            padding: 24,
+            minHeight: 280,
+            background: colorBgContainer,
+          }}
+        >
+          <Outlet />
+        </Content>
       </Layout>
     </Layout>
   );
