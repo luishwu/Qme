@@ -1,25 +1,23 @@
-import * as AiIcons from 'react-icons/ai';
-import * as MdIcons from 'react-icons/md';
-
-import React from 'react';
+import {
+  HomeOutlined,
+  UploadOutlined,
+  UserOutlined,
+} from '@ant-design/icons';
 
 export const SidebarData = [
-  {
-    title: 'Home',
-    path: '/',
-    icon: <AiIcons.AiFillHome />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Queue',
-    path: '/queue',
-    icon: <MdIcons.MdQueue />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Profile',
-    path: '/profile',
-    icon: <AiIcons.AiOutlineUser />,
-    cName: 'nav-text'
-  }
+{
+  title: 'Home',
+  path: '/',
+  icon: <HomeOutlined />,
+},
+{
+  title: 'Queue',
+  path: '/queue',
+  icon: <UploadOutlined />,
+},
+{
+  title: 'Profile',
+  path: '/profile',
+  icon: <UserOutlined />,
+}
 ];

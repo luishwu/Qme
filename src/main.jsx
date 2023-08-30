@@ -1,15 +1,12 @@
 import './index.css'
 
 import {
-  Link,
-  Outlet,
-  Route,
   RouterProvider,
   createBrowserRouter,
-  createRoutesFromElements,
 } from "react-router-dom";
 
 import Home from './pages/Home';
+import MainLayout from './components/MainLayout/MainLayout';
 import Navbar from "./components/Navbar/Navbar";
 import Profile from './pages/Profile';
 import Queue from './pages/Queue';
@@ -18,8 +15,7 @@ import ReactDOM from 'react-dom/client'
 
 const AppLayout = () => (
   <>
-    <Navbar />
-    <Outlet />
+    <MainLayout />
   </>
 );
 const router = createBrowserRouter([
